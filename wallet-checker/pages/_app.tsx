@@ -11,6 +11,7 @@ import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import { clusterApiUrl } from "@solana/web3.js";
 import NewIndex from "../components/NewIndex";
 import { RecoilRoot } from "recoil";
+import NFTDisplay from "components/nftdisplay";
 
 // Default styles that can be overridden by your app
 require("@solana/wallet-adapter-react-ui/styles.css");
@@ -50,6 +51,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
             <WalletModalProvider>
               <NewIndex Component={Component} pageProps={pageProps} />
             </WalletModalProvider>
+            <NFTDisplay />
           </WalletProvider>
         </ConnectionProvider>
       </RecoilRoot>

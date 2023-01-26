@@ -42,7 +42,7 @@ const NewIndex = ({
       setBalance(0);
     }
   }, [publicKey]);
-  console.log(balance);
+  console.log(connection);
   return (
     <Layout>
       <Component {...pageProps} />
